@@ -3,17 +3,17 @@ using TMPro;
 
 public class CoinCounter : MonoBehaviour
 {
+    [SerializeField] TMP_Text CoinNumber;
     [SerializeField] ItemCollector itemCollector;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
         
     }
-
     // Update is called once per frame
     void Update()
     {
-        
+        CoinNumber.text = $"{itemCollector.coins}";
+
+
     }
 }
