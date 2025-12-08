@@ -3,22 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class RandomArea : MonoBehaviour
 {
-    
+    public int Retries;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Generator();
+        
         
     }
-    void Generator()
-    {
-        int RoomGenerator = Random.Range(1, 7);
-        if (SceneManager.GetActiveScene().buildIndex == RoomGenerator + 3)
-        {
-            int Roomgenerator = Random.Range(1, 7);
-        }
-    }
+   
 
 // Update is called once per frame
 void Update()
@@ -31,8 +24,10 @@ void Update()
         while (SceneManager.GetActiveScene().buildIndex == RoomGenerator + 3)
         {
             RoomGenerator = Random.Range(1, 7);
+            Retries++;
         }
-        print($"{RoomGenerator}");
+        print($"we chose {RoomGenerator}. it took {Retries} Attempts ");
+        
         SceneManager.LoadScene(3 + RoomGenerator);
     }
 }
