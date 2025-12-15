@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 7375385387806873792}
   - component: {fileID: 1908120575140157525}
   - component: {fileID: 2175592498372905223}
+  - component: {fileID: 7756482770182539910}
+  - component: {fileID: 1616918166438237341}
+  - component: {fileID: 2530371709468585722}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -201,3 +204,44 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.61995316, y: 0.6377404}
   m_EdgeRadius: 0
+--- !u!114 &7756482770182539910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7983484194274607830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0308425a3bfca4b92909c0d5ca5800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: 0
+  coinsText: {fileID: 0}
+--- !u!114 &1616918166438237341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7983484194274607830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bd5f191ebff26b41a58d7bf84c52631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CoinNumber: {fileID: 0}
+  itemCollector: {fileID: 7756482770182539910}
+--- !u!114 &2530371709468585722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7983484194274607830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9889d06cef74d944965df277a411c61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Retries: 0

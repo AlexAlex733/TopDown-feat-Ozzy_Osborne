@@ -49,11 +49,5 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.linearVelocity = movement * moveSpeed;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("NextLevel"))
-	    {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
-    }
+    
 }
