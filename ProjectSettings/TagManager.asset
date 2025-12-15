@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NextLevel
   - RandomNext
+  - Coin
   layers:
   - Default
   - TransparentFX
