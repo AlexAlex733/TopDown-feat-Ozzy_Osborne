@@ -5,8 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - NextLevel
-  - RandomNext
-  - Coin
+  - Shop
   layers:
   - Default
   - TransparentFX
