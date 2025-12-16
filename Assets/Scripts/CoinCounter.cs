@@ -7,7 +7,7 @@ public class CoinCounter : MonoBehaviour
     [SerializeField] ItemCollector itemCollector;
     private void Start()
     {
-        
+        CoinNumber = GameObject.Find("Coins").GetComponent<TMP_Text>();
     }
     // Update is called once per frame
     void Update()
