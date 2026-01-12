@@ -8,6 +8,20 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     public Animator animator;
 
+    public bool isFacingDown;
+    public bool isFacingUp;
+    public bool isFacingLeft;
+    public bool isFacingRight;
+
+    [SerializeField] KeyCode upKey = KeyCode.W;
+    [SerializeField] KeyCode upArrow = KeyCode.UpArrow;
+    [SerializeField] KeyCode downKey = KeyCode.S;
+    [SerializeField] KeyCode downArrow = KeyCode.DownArrow;
+    [SerializeField] KeyCode leftKey = KeyCode.A;
+    [SerializeField] KeyCode leftArrow = KeyCode.LeftArrow;
+    [SerializeField] KeyCode rightKey = KeyCode.D;
+    [SerializeField] KeyCode rightArrow = KeyCode.RightArrow;
+
     void Update()
     {
 
@@ -42,6 +56,35 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("Speed", 0);
             animator.SetFloat("Horizontal", animator.GetFloat("Last-Horizontal"));
             animator.SetFloat("Vertical", animator.GetFloat("Last-Vertical"));
+        }
+
+        if (Input.GetKeyDown(upKey) || Input.GetKeyDown(upArrow))
+        {
+            isFacingUp = true;
+            isFacingDown = false;
+            isFacingRight = false;
+            isFacingLeft = false;
+        }
+        if (Input.GetKeyDown(downKey) || Input.GetKeyDown(downArrow))
+        {
+            isFacingUp = false;
+            isFacingDown = true;
+            isFacingRight = false;
+            isFacingLeft = false;
+        }
+        if (Input.GetKeyDown(leftKey) || Input.GetKeyDown(leftArrow))
+        {
+            isFacingUp = false;
+            isFacingDown = false;
+            isFacingRight = false;
+            isFacingLeft = true;
+        }
+        if (Input.GetKeyDown(rightKey) || Input.GetKeyDown(rightArrow))
+        {
+            isFacingUp = false;
+            isFacingDown = false;
+            isFacingRight = true;
+            isFacingLeft = false;
         }
     }
 

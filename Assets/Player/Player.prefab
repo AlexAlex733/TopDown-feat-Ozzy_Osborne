@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1616918166438237341}
   - component: {fileID: 2530371709468585722}
   - component: {fileID: 2463580589214985599}
+  - component: {fileID: -1580419066364848514}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -159,6 +160,18 @@ MonoBehaviour:
   moveSpeed: 5
   rb: {fileID: 7375385387806873792}
   animator: {fileID: 1770325401086026182}
+  isFacingDown: 0
+  isFacingUp: 0
+  isFacingLeft: 0
+  isFacingRight: 0
+  upKey: 119
+  upArrow: 273
+  downKey: 115
+  downArrow: 274
+  leftKey: 97
+  leftArrow: 276
+  rightKey: 100
+  rightArrow: 275
 --- !u!61 &2175592498372905223
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -259,3 +272,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectIndex: 0
+--- !u!114 &-1580419066364848514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7983484194274607830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6047610152b29984c9cfb7ff488c9fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationMulti: 1
+  attackRotation: {x: 0, y: 0, z: 180, w: 0}
+  attack: 323
+  pM: {fileID: 0}
+  sB: {fileID: 0}
