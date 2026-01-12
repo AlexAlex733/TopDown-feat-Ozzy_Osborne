@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
         EnemyHealthManager enemy = other.GetComponent<EnemyHealthManager>();
         if (enemy != null)
         {
-            enemy.TakeDamage(damage);
+            //enemy.TakeDamage(damage);
             Destroy(gameObject); //Förstör bullet om den träffar enemy
         }
     }

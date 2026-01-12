@@ -3825,6 +3825,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 5
   maxHealth: 5
+--- !u!224 &1887233488 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 190632865083423111, guid: 388fe042f47f96a4fbe85aa2395852ac, type: 3}
+  m_PrefabInstance: {fileID: 562035405}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2044342642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3881,6 +3886,10 @@ PrefabInstance:
       propertyPath: homePos
       value: 
       objectReference: {fileID: 306718825}
+    - target: {fileID: 8121401704369108109, guid: ab4efe1ddcf175b438e0f4fd07d5e5bc, type: 3}
+      propertyPath: Coin
+      value: 
+      objectReference: {fileID: 1887233488}
     - target: {fileID: 8875181937290283038, guid: ab4efe1ddcf175b438e0f4fd07d5e5bc, type: 3}
       propertyPath: m_Name
       value: Enemy (1)

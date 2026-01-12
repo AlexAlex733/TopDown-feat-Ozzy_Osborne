@@ -1,28 +1,36 @@
+using System.Xml.Serialization;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class EnemyHealthManager : MonoBehaviour
 {
     public int maxHealth = 3;
     public int currentHealth;
+    [SerializeField] ItemCollector iC;
 
     void Start()
     {
         currentHealth = maxHealth;
+        iC = FindAnyObjectByType<ItemCollector>();
     }
-
-    public void TakeDamage(int damage)
+    public void Update()
     {
-        currentHealth -= damage;
-
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            currentHealth -= 1;
+        }
         if (currentHealth <= 0)
         {
-            Die();
+            iC.coins++;
+            Destroy(gameObject);
         }
     }
 
+   
+
     void Die()
-    {
-        //Här kan du lägga till en animation, tappa loot och så vidare. 
-        Destroy(gameObject);
+    { 
+            iC.coins++;
+            Destroy(gameObject);
     }
 }

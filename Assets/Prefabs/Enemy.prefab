@@ -122,7 +122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
-  currentHealth: 0
+  currentHealth: 3
+  iC: {fileID: 0}
 --- !u!60 &2270407836108981421
 PolygonCollider2D:
   m_ObjectHideFlags: 0
