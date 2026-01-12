@@ -16,3 +16,15 @@ public class HealtManager : MonoBehaviour
         }
     }
 }
+public class UponDeath : MonoBehaviour
+{
+    public Transform Coin;
+  public void HealtManager(int CurrentHealth)
+    {
+        if (CurrentHealth <= 0)
+        {
+            Instantiate(Coin, gameObject.transform);
+            Destroy(gameObject);
+        }
+    }
+}

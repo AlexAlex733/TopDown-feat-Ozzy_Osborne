@@ -6,6 +6,9 @@ TagManager:
   tags:
   - NextLevel
   - Shop
+  - RandomNext
+  - Coin
+  - Enemy
   layers:
   - Default
   - TransparentFX

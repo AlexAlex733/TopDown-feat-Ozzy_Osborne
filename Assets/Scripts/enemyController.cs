@@ -50,11 +50,5 @@ public class enemyController : MonoBehaviour //Måste ha samma namn som scriptet
             speed = 0f;
         }
     }
-    public void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.collider.CompareTag("Player"))
-        {
-            speed = 2f;
-        }
-    }
+    
 }
